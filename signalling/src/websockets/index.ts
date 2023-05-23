@@ -68,7 +68,7 @@ const onConnection = (logger: Logger, server: Server) => (socket: Socket) => {
 export const createServer = (logger: Logger): Server => {
   const server = new IOServer<ClientEvents, ServerEvents>({
     cors: {
-      origin: process.env.NODE_ENV === "production" ? "*" : "https://p2p-vc.onrender.com/",
+      origin: process.env.NODE_ENV === "development" ? "https://p2p-vc.onrender.com/" : "https://p2p-vc.onrender.com/",
       methods: ["GET", "POST"],
     },
   });
