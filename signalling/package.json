@@ -4,7 +4,6 @@
   "version": "0.1.0",
   "description": "Signalling server for p2p.chat",
   "scripts": {
-    "start": "export NODE_ENV=development;
     "build": "tsc --build",
     "dev": "nodemon",
     "format": "prettier --write \"**/*.{js,ts,json,yml}\"",
